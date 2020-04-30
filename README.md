@@ -2,7 +2,7 @@
 
  Company: Drexel University CS 510
 
- Engineer: Cheng HONG
+ Engineer: Cheng HONG - ch3283
  
  Sketch: This script is written for provding different solution in Sliding Brick Puzzle
  
@@ -40,3 +40,11 @@ Flag_AStar = 0
 Flag_Maze = 0        # You can choose 0, 1 ,2 or 3 which represent the level of SBP
 ```
 
+For example, if I wanna use BFS and SBP-level2:
+
+```python
+Flag_BFS = 1         # Set Flag_BFS = 1
+Flag_Maze = 2        # Choose Flag_Maze = 2
+```
+
+## All Algorithms are Completed!
