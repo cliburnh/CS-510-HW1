@@ -6,7 +6,7 @@
  
  Sketch: This script is written for provding different solution in Sliding Brick Puzzle
  
- Date: 2002/04/29
+ Date: 2020/04/29
 
 
 ## Environment
