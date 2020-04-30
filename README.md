@@ -11,7 +11,7 @@
 
 ## Environment
 
- windows 10 (64bit)
+ Windows 10 (64bit)
 
  Python 3.7.6
 
@@ -40,11 +40,27 @@ Flag_AStar = 0
 Flag_Maze = 0        # You can choose 0, 1 ,2 or 3 which represent the level of SBP
 ```
 
-For example, if I wanna use BFS and SBP-level2:
+For example, if I wanna use BFS and SBP-level0:
 
 ```python
 Flag_BFS = 1         # Set Flag_BFS = 1
-Flag_Maze = 2        # Choose Flag_Maze = 2
+Flag_Maze = 0        # Choose Flag_Maze = 0
 ```
+
+and we can get output:
+```python
+[2, 'left']
+[4, 'down']
+[3, 'right']
+[2, 'up']
+[2, 'up']
+[5, 4]
+[1, 2, 2, 1, 1]
+[1, 0, 0, 3, 1]
+[1, 0, 0, 4, 1]
+[1, 1, 1, 1, 1]
+#16 0 seconds and 0/100 5
+```
+To be noticed, the last line represent #nodes time length
 
 ## All Algorithms are Completed!
