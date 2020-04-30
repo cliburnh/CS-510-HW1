@@ -1,25 +1,42 @@
 # CS510 HW1 Sliding Brick Puzzle
 
- -Company: Drexel University CS 510
+ Company: Drexel University CS 510
 
- -Engineer: Cheng HONG
-
- -Date: 2002/04/29
+ Engineer: Cheng HONG
+ 
+ Sketch: This script is written for provding different solution in Sliding Brick Puzzle
+ 
+ Date: 2002/04/29
 
 
 ## Environment
 
- -windows 10 (64bit)
+ windows 10 (64bit)
 
- -Python 3.7.6
+ Python 3.7.6
 
- -Jupter Notebook
+ Jupter Notebook
 
+## Item
+
+Radom Walk, BFS, DFS ,IDS and A* algorithm
+
+Output-hw1.txt in each algorithm and 4 SCP level
+
+HW1.py and HW1.ipynb
 
 ## How to use
+Choose value of Method and Maze to see the result:
 
-#### -windows 10 (64bit)
+```python
+N = 3                # Random walk step
 
-#### -Python 3.7.6
+Flag_RandomWalk = 0  # Set value = 1 to choose method
+Flag_BFS = 0
+Flag_DFS = 0
+Flag_IDS = 0
+Flag_AStar = 0
 
-#### -Jupter Notebook
+Flag_Maze = 0        # You can choose 0, 1 ,2 or 3 which represent the level of SBP
+```
+
