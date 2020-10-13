@@ -1,6 +1,6 @@
 # CS611 Project1 Steering Behaviors for controlling cars (Java)
 
- Company: Drexel University CS 611:Game AI
+ Company: Drexel University CS 611: Game AI
 
  Engineer: Cheng HONG - ch3283
  
