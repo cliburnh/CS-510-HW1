@@ -1,12 +1,12 @@
-# CS611 Project2 Pathfinding in S3 (Java)
+# CS611 Project4 Strategic Decision Making in microRTS (Java)
 
  Company: Drexel University CS 611: Game AI
 
  Engineer: Cheng HONG - ch3283
  
- Sketch: This script is written to implement Pathfinding
+ Sketch: This script is written to implement Strategic Decision Making
  
- Date: 2020/10/20
+ Date: 2020/11/21
 
 ## Environment
 
@@ -18,11 +18,21 @@
  
 ## Task
 
- A* algorithm
+ a knowledge-base, an inference engine and simple-rules-base.
 
 ## How to use
 
- Put the all the source in the same document, after make the game run slower by changing the variable REDRAWING_PERIOD in S3App into 10 or 20, then you can play the S3 game.
+ Put the all the source in the same document, then you can make the game run by changing the path of rules as yours in the file ai.abstraction.LightRush, as follow:
+ ```java
+ String pathname = "C:\\Users\\cliburn\\Desktop\\microrts-master\\src\\ai\\abstraction\\simple";
+ ```
+ Also, you can choose the AI you want to use, edit the file test.GameVisualSimulationTest as follow:
+ ```java
+ // AI ai1 = new MouseController(w);
+ // AI ai1 = new PassiveAI();
+ // AI ai1 = new RandomBiasedAI();
+    AI ai1 = new LightRush(utt, new AStarPathFinding());
+ ```
 
 ## What I do
  
