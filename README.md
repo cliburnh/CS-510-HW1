@@ -18,7 +18,7 @@
  
 ## Task
 
- a knowledge-base, an inference engine and simple-rules-base.
+ a knowledge-base, an inference engine and simple-rules-base system.
 
 ## How to use
 
@@ -26,7 +26,8 @@
  ```java
  String pathname = "C:\\Users\\cliburn\\Desktop\\microrts-master\\src\\ai\\abstraction\\simple";
  ```
- Also, you can choose the AI you want to use, edit the file test.GameVisualSimulationTest as follow:
+ Then, set the test.PlayGamewithMmouseTest as the main class.
+ Also, you can choose the AI you want to use, edit line 40~44 in the file test.PlayGamewithMmouseTest as follow:
  ```java
  // AI ai1 = new MouseController(w);
  // AI ai1 = new PassiveAI();
@@ -36,17 +37,15 @@
 
 ## What I do
  
- In this project, we need to work in a RTS S3 Game and Implement the A* algorithm to reliaze a pathfinding function. In order to achieve this, firstly I need to design a proper  coordinate to represent each state(location). Then we need a check state function to distinct each location. Also, I use a hashmap to record each branch of node for the A* algorithm. In the A* part, I use a hashmap to recode F in each cell. Thus, this algorithm can be simply achieved by check the lowF cell each time.
+ In this project, we need to work in a microRTS platform in order to achieve Strategic Decision Making module. To begin with, we need to percept a Knowleadge Base by detecting all units in the map. Then we should read the rules stored in the txt.file. After translating the rules from words to code, a inference system has been implemented to accomplish the rule-order. In order to achive these function, 4 main functions has been written as follow:
 
-1) Manhattan function: Designed for computing the Manhattan Distance.
+1) getKB function: Return HashMap List stored Knowleadge Base, designed for summarizing the environment variables and pacakege them.
 
-2) checkState function: Designed for testing if the object have arrived the destination.
+2) readRules function: Return String List, designed for reading txt. rules file from specific path.
 
-3) compareState function: Designed for testing if the object have already check this location, if have arrived once then ignore this location.
+3) transRules function: Return HashMap List, designed for translating rules into Knowleadge Base forms.
   
-4) nextPossibleLocation function: This function is create to check if a cell in the map is free, I use the function "anyLevelCollision" of the S3 class here.
+4) inference engine part: Extend the getAction(), this part is created to unificate the rules and Knowledage base, also excute the FiredRules.
    
-5) AStar function: Return the nearest way from the current location to destination.
-
- Also, I find a simple way to achieve the system by adjust the class of node except using hashmap. We can add the attributes of parental node for each node, and also the Attributes of F. It will be more readable. Besides, using prime number for each location of node can help the A* algorithm run faster.
+ Also, for the future work if we want to achieve higher-oder rules like rules-complex.txt, we can improve the transRules function in order to have a better libaray to transforlate more keywords.
    
